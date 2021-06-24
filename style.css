@@ -1,0 +1,254 @@
+.project-work
+{
+  width: 94%;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 2%;
+  margin-top: 4%;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.8),
+  5px 5px 15px rgba(0, 0, 0, 0.155), 
+  inset -2px -2px 6px rgba(255,255,255,0.8), 
+  inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+  box-sizing: border-box;
+  background-color: #e4e4ea;
+
+}
+.work
+{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+ 
+}
+.work #work_title
+{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
+  color:green;  
+}
+#work_title span
+{
+  border-bottom: 5px solid green; 
+  border-radius: 5px;
+  padding-bottom: 3px;
+}
+#work_desc
+{
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-size: 1.4rem;
+  color: black;
+}
+
+@media screen and (max-width:450px){
+  .work #work_title
+  {
+    font-size: 2.5rem;
+  
+  }
+}
+
+/*********************************************************************************************************
+All Project 
+**********************************************************************************************************/
+.work_box
+{
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+.work_contanier
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 40px;
+
+}
+.work_cards
+{
+  height: 325px;
+  max-width: 500px;
+  margin: 0 20px;
+  margin-bottom: 5%;
+  transition: 0.4s;
+
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.8),
+                5px 5px 15px rgba(0, 0, 0, 0.155), 
+                inset -2px -2px 6px rgba(255,255,255,0.8), 
+                inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+  
+}
+.work_cards:hover
+{
+  height: auto;
+  box-shadow: inset -4px -4px 10px rgba(255,255,255,0.8), 
+              inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+}
+.work_cards .work_img
+{   
+  
+  width: 94%;
+  height: 200px;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  border: 1px solid gray;
+  
+}
+.work_cards .work_img #workimage
+{
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.work_cards .work-title
+{
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+.work_cards .work-title .project_name
+{
+ font-size: 2rem;
+ font-weight: 900px;
+ color: black;
+ margin-top: 10px;
+ text-align: center;
+}
+
+.work_cards .project_bottom-txt
+{
+  padding: 0 20px 10px 20px;
+  margin-top: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+  border-bottom: 1px solid gray;
+  
+}
+.work_cards:hover .project_bottom-txt
+{
+  opacity: 1;
+  visibility: visible;
+  
+
+}
+.work_cards #project_ids
+{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-top: 7px;
+  color: green;  
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.work_cards .project_bottom-txt .project_descs
+{
+  text-align: justify;
+  font-size: 1rem;
+  
+}
+.work_cards .project_bottom-txt .project_link_btn
+{
+  margin: 10px 0;
+  text-align: left;
+
+}
+.work_cards .project_bottom-txt .project_link_btn #project_link
+{
+  text-decoration: none;
+  background-color:green;  
+  color: white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+}
+
+.work_cards .project_bottom-txt .project_link_btn #project_link:hover
+{
+  transform: scale(0.9);
+
+}
+
+@media (min-width:501px) and (max-width:900px)  {
+  .work_contanier
+  {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  .work_cards
+  {
+      max-width: 700px;
+      margin: 20px 0;
+  }
+}
+@media (min-width:371px)  and (max-width:500px) 
+{   
+  .work_cards
+  {
+      height: 305px;
+      max-width: 700px;
+      margin: 20px 0;
+  }
+
+ .work_cards .work-title .project_name
+ {
+   font-size: 1.4rem;
+ 
+ }
+.work_cards .work-title #project_ids
+{
+
+ font-size: 1.3rem;
+ line-height: 20px;
+}
+}
+@media screen and (max-width:370px) 
+{
+  .work_cards
+  { 
+      height: 295px;
+      max-width: 1000px;
+      margin: 20px 0;
+  }
+ .work_cards .work-title .project_name
+ {
+   font-size: 1.2rem;
+ 
+ }
+.work_cards .work-title #project_ids
+{
+
+ font-size: 1rem;
+ line-height: 20px;
+}
+}
+
